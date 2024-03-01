@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 struct Constants {
     struct API {
@@ -13,4 +14,8 @@ struct Constants {
         static let tripsEndpoint = baseURL + "trips.json"
         static let stopEndpoint = baseURL + "stops.json"
     }
+}
+
+extension Color {
+    static let backgroundColor = Color(red: 242.0 / 255.0, green: 242.0 / 255.0, blue: 247.0 / 255.0)
 }

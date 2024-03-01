@@ -44,11 +44,18 @@
 		934905D52B91B65400E1F5AD /* StopInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934905D42B91B65400E1F5AD /* StopInfo.swift */; };
 		934905D62B91B65400E1F5AD /* StopInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934905D42B91B65400E1F5AD /* StopInfo.swift */; };
 		934905D72B91B65400E1F5AD /* StopInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934905D42B91B65400E1F5AD /* StopInfo.swift */; };
+		934905D92B91FC9A00E1F5AD /* ContactFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934905D82B91FC9A00E1F5AD /* ContactFormView.swift */; };
+		934905DA2B91FC9A00E1F5AD /* ContactFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934905D82B91FC9A00E1F5AD /* ContactFormView.swift */; };
+		934905DB2B91FC9A00E1F5AD /* ContactFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934905D82B91FC9A00E1F5AD /* ContactFormView.swift */; };
+		934905DD2B920E4100E1F5AD /* FormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934905DC2B920E4100E1F5AD /* FormViewModel.swift */; };
+		934905DE2B920E4100E1F5AD /* FormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934905DC2B920E4100E1F5AD /* FormViewModel.swift */; };
+		934905DF2B920E4100E1F5AD /* FormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934905DC2B920E4100E1F5AD /* FormViewModel.swift */; };
+		934905F32B92493B00E1F5AD /* Issue+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934905F12B92493B00E1F5AD /* Issue+CoreDataClass.swift */; };
+		934905F42B92493B00E1F5AD /* Issue+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934905F22B92493B00E1F5AD /* Issue+CoreDataProperties.swift */; };
+		934905F62B924C9B00E1F5AD /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934905F52B924C9B00E1F5AD /* CoreDataManager.swift */; };
 		937667BB2B8DD7EF0018E530 /* ios_mvvm_swiftuiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937667BA2B8DD7EF0018E530 /* ios_mvvm_swiftuiApp.swift */; };
-		937667BD2B8DD7EF0018E530 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937667BC2B8DD7EF0018E530 /* ContentView.swift */; };
 		937667BF2B8DD7F10018E530 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 937667BE2B8DD7F10018E530 /* Assets.xcassets */; };
 		937667C22B8DD7F10018E530 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 937667C12B8DD7F10018E530 /* Preview Assets.xcassets */; };
-		937667C42B8DD7F10018E530 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937667C32B8DD7F10018E530 /* Persistence.swift */; };
 		937667C72B8DD7F10018E530 /* ios_mvvm_swiftui.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 937667C52B8DD7F10018E530 /* ios_mvvm_swiftui.xcdatamodeld */; };
 		937667D12B8DD7F20018E530 /* ios_mvvm_swiftuiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937667D02B8DD7F20018E530 /* ios_mvvm_swiftuiTests.swift */; };
 		937667DB2B8DD7F20018E530 /* ios_mvvm_swiftuiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937667DA2B8DD7F20018E530 /* ios_mvvm_swiftuiUITests.swift */; };
@@ -85,12 +92,15 @@
 		934905BD2B8ED28F00E1F5AD /* StopAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopAnnotation.swift; sourceTree = "<group>"; };
 		934905CC2B90C7C200E1F5AD /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		934905D42B91B65400E1F5AD /* StopInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopInfo.swift; sourceTree = "<group>"; };
+		934905D82B91FC9A00E1F5AD /* ContactFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactFormView.swift; sourceTree = "<group>"; };
+		934905DC2B920E4100E1F5AD /* FormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewModel.swift; sourceTree = "<group>"; };
+		934905F12B92493B00E1F5AD /* Issue+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Issue+CoreDataClass.swift"; sourceTree = "<group>"; };
+		934905F22B92493B00E1F5AD /* Issue+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Issue+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		934905F52B924C9B00E1F5AD /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		937667B72B8DD7EF0018E530 /* ios-mvvm-swiftui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-mvvm-swiftui.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		937667BA2B8DD7EF0018E530 /* ios_mvvm_swiftuiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_mvvm_swiftuiApp.swift; sourceTree = "<group>"; };
-		937667BC2B8DD7EF0018E530 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		937667BE2B8DD7F10018E530 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		937667C12B8DD7F10018E530 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		937667C32B8DD7F10018E530 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		937667C62B8DD7F10018E530 /* ios_mvvm_swiftui.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ios_mvvm_swiftui.xcdatamodel; sourceTree = "<group>"; };
 		937667CC2B8DD7F20018E530 /* ios-mvvm-swiftuiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-mvvm-swiftuiTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		937667D02B8DD7F20018E530 /* ios_mvvm_swiftuiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_mvvm_swiftuiTests.swift; sourceTree = "<group>"; };
@@ -149,6 +159,7 @@
 			children = (
 				934905982B8E582D00E1F5AD /* MapView.swift */,
 				934905CC2B90C7C200E1F5AD /* MainView.swift */,
+				934905D82B91FC9A00E1F5AD /* ContactFormView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -157,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				934905B52B8E648E00E1F5AD /* MapViewModel.swift */,
+				934905DC2B920E4100E1F5AD /* FormViewModel.swift */,
 			);
 			path = ModelViews;
 			sourceTree = "<group>";
@@ -176,6 +188,17 @@
 				934905BD2B8ED28F00E1F5AD /* StopAnnotation.swift */,
 			);
 			path = ComponentsView;
+			sourceTree = "<group>";
+		};
+		934905F02B92473600E1F5AD /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				934905F12B92493B00E1F5AD /* Issue+CoreDataClass.swift */,
+				934905F22B92493B00E1F5AD /* Issue+CoreDataProperties.swift */,
+				937667C52B8DD7F10018E530 /* ios_mvvm_swiftui.xcdatamodeld */,
+				934905F52B924C9B00E1F5AD /* CoreDataManager.swift */,
+			);
+			path = Database;
 			sourceTree = "<group>";
 		};
 		937667AE2B8DD7EE0018E530 = {
@@ -204,11 +227,9 @@
 				934905B12B8E62B500E1F5AD /* Constants.swift */,
 				934905B92B8EA35400E1F5AD /* Errors.swift */,
 				937667BA2B8DD7EF0018E530 /* ios_mvvm_swiftuiApp.swift */,
+				934905F02B92473600E1F5AD /* Database */,
 				9349058A2B8E49A100E1F5AD /* Modules */,
-				937667BC2B8DD7EF0018E530 /* ContentView.swift */,
 				937667BE2B8DD7F10018E530 /* Assets.xcassets */,
-				937667C32B8DD7F10018E530 /* Persistence.swift */,
-				937667C52B8DD7F10018E530 /* ios_mvvm_swiftui.xcdatamodeld */,
 				937667C02B8DD7F10018E530 /* Preview Content */,
 			);
 			path = "ios-mvvm-swiftui";
@@ -388,21 +409,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				934905A62B8E5F9000E1F5AD /* LocationModel.swift in Sources */,
+				934905F42B92493B00E1F5AD /* Issue+CoreDataProperties.swift in Sources */,
 				934905B22B8E62B500E1F5AD /* Constants.swift in Sources */,
 				934905AA2B8E609000E1F5AD /* StopModel.swift in Sources */,
-				937667C42B8DD7F10018E530 /* Persistence.swift in Sources */,
-				937667BD2B8DD7EF0018E530 /* ContentView.swift in Sources */,
 				934905AE2B8E61E900E1F5AD /* TripService.swift in Sources */,
 				934905992B8E582D00E1F5AD /* MapView.swift in Sources */,
 				934905BA2B8EA35400E1F5AD /* Errors.swift in Sources */,
 				934905BE2B8ED28F00E1F5AD /* StopAnnotation.swift in Sources */,
 				934905A22B8E5D8D00E1F5AD /* TripModel.swift in Sources */,
 				937667BB2B8DD7EF0018E530 /* ios_mvvm_swiftuiApp.swift in Sources */,
+				934905F62B924C9B00E1F5AD /* CoreDataManager.swift in Sources */,
 				934905D52B91B65400E1F5AD /* StopInfo.swift in Sources */,
+				934905DD2B920E4100E1F5AD /* FormViewModel.swift in Sources */,
 				934905CD2B90C7C200E1F5AD /* MainView.swift in Sources */,
 				9349059E2B8E59CA00E1F5AD /* CardView.swift in Sources */,
 				937667C72B8DD7F10018E530 /* ios_mvvm_swiftui.xcdatamodeld in Sources */,
+				934905D92B91FC9A00E1F5AD /* ContactFormView.swift in Sources */,
 				934905B62B8E648E00E1F5AD /* MapViewModel.swift in Sources */,
+				934905F32B92493B00E1F5AD /* Issue+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,8 +434,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				934905DE2B920E4100E1F5AD /* FormViewModel.swift in Sources */,
 				937667D12B8DD7F20018E530 /* ios_mvvm_swiftuiTests.swift in Sources */,
 				934905AB2B8E609000E1F5AD /* StopModel.swift in Sources */,
+				934905DA2B91FC9A00E1F5AD /* ContactFormView.swift in Sources */,
 				934905D62B91B65400E1F5AD /* StopInfo.swift in Sources */,
 				934905CE2B90C7C200E1F5AD /* MainView.swift in Sources */,
 				934905BF2B8ED28F00E1F5AD /* StopAnnotation.swift in Sources */,
@@ -442,7 +468,9 @@
 				934905C02B8ED28F00E1F5AD /* StopAnnotation.swift in Sources */,
 				937667DB2B8DD7F20018E530 /* ios_mvvm_swiftuiUITests.swift in Sources */,
 				934905CF2B90C7C200E1F5AD /* MainView.swift in Sources */,
+				934905DB2B91FC9A00E1F5AD /* ContactFormView.swift in Sources */,
 				934905AC2B8E609000E1F5AD /* StopModel.swift in Sources */,
+				934905DF2B920E4100E1F5AD /* FormViewModel.swift in Sources */,
 				934905B42B8E62B500E1F5AD /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

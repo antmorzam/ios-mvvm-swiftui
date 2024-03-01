@@ -9,7 +9,6 @@ import SwiftUI
 
 @main
 struct ios_mvvm_swiftuiApp: App {
-    let persistenceController = PersistenceController.shared
 
     var body: some Scene {
         WindowGroup {
