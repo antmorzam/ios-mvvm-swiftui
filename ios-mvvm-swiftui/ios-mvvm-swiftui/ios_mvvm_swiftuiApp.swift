@@ -13,8 +13,7 @@ struct ios_mvvm_swiftuiApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            MainView()
         }
     }
 }

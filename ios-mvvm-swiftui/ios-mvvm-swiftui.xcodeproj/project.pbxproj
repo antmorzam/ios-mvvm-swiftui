@@ -7,6 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		934905992B8E582D00E1F5AD /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934905982B8E582D00E1F5AD /* MapView.swift */; };
+		9349059A2B8E582D00E1F5AD /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934905982B8E582D00E1F5AD /* MapView.swift */; };
+		9349059B2B8E582D00E1F5AD /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934905982B8E582D00E1F5AD /* MapView.swift */; };
+		9349059E2B8E59CA00E1F5AD /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9349059D2B8E59CA00E1F5AD /* CardView.swift */; };
+		9349059F2B8E59CA00E1F5AD /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9349059D2B8E59CA00E1F5AD /* CardView.swift */; };
+		934905A02B8E59CA00E1F5AD /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9349059D2B8E59CA00E1F5AD /* CardView.swift */; };
+		934905A22B8E5D8D00E1F5AD /* TripModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934905A12B8E5D8D00E1F5AD /* TripModel.swift */; };
+		934905A32B8E5D8D00E1F5AD /* TripModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934905A12B8E5D8D00E1F5AD /* TripModel.swift */; };
+		934905A42B8E5D8D00E1F5AD /* TripModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934905A12B8E5D8D00E1F5AD /* TripModel.swift */; };
+		934905A62B8E5F9000E1F5AD /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934905A52B8E5F9000E1F5AD /* LocationModel.swift */; };
+		934905A72B8E5F9000E1F5AD /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934905A52B8E5F9000E1F5AD /* LocationModel.swift */; };
+		934905A82B8E5F9000E1F5AD /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934905A52B8E5F9000E1F5AD /* LocationModel.swift */; };
+		934905AA2B8E609000E1F5AD /* StopModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934905A92B8E609000E1F5AD /* StopModel.swift */; };
+		934905AB2B8E609000E1F5AD /* StopModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934905A92B8E609000E1F5AD /* StopModel.swift */; };
+		934905AC2B8E609000E1F5AD /* StopModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934905A92B8E609000E1F5AD /* StopModel.swift */; };
+		934905AE2B8E61E900E1F5AD /* TripService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934905AD2B8E61E900E1F5AD /* TripService.swift */; };
+		934905AF2B8E61E900E1F5AD /* TripService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934905AD2B8E61E900E1F5AD /* TripService.swift */; };
+		934905B02B8E61E900E1F5AD /* TripService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934905AD2B8E61E900E1F5AD /* TripService.swift */; };
+		934905B22B8E62B500E1F5AD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934905B12B8E62B500E1F5AD /* Constants.swift */; };
+		934905B32B8E62B500E1F5AD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934905B12B8E62B500E1F5AD /* Constants.swift */; };
+		934905B42B8E62B500E1F5AD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934905B12B8E62B500E1F5AD /* Constants.swift */; };
+		934905B62B8E648E00E1F5AD /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934905B52B8E648E00E1F5AD /* MapViewModel.swift */; };
+		934905B72B8E648E00E1F5AD /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934905B52B8E648E00E1F5AD /* MapViewModel.swift */; };
+		934905B82B8E648E00E1F5AD /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934905B52B8E648E00E1F5AD /* MapViewModel.swift */; };
+		934905BA2B8EA35400E1F5AD /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934905B92B8EA35400E1F5AD /* Errors.swift */; };
+		934905BB2B8EA35400E1F5AD /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934905B92B8EA35400E1F5AD /* Errors.swift */; };
+		934905BC2B8EA35400E1F5AD /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934905B92B8EA35400E1F5AD /* Errors.swift */; };
+		934905BE2B8ED28F00E1F5AD /* StopAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934905BD2B8ED28F00E1F5AD /* StopAnnotation.swift */; };
+		934905BF2B8ED28F00E1F5AD /* StopAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934905BD2B8ED28F00E1F5AD /* StopAnnotation.swift */; };
+		934905C02B8ED28F00E1F5AD /* StopAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934905BD2B8ED28F00E1F5AD /* StopAnnotation.swift */; };
+		934905CB2B90A63400E1F5AD /* Polyline in Frameworks */ = {isa = PBXBuildFile; productRef = 934905CA2B90A63400E1F5AD /* Polyline */; };
+		934905CD2B90C7C200E1F5AD /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934905CC2B90C7C200E1F5AD /* MainView.swift */; };
+		934905CE2B90C7C200E1F5AD /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934905CC2B90C7C200E1F5AD /* MainView.swift */; };
+		934905CF2B90C7C200E1F5AD /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934905CC2B90C7C200E1F5AD /* MainView.swift */; };
+		934905D52B91B65400E1F5AD /* StopInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934905D42B91B65400E1F5AD /* StopInfo.swift */; };
+		934905D62B91B65400E1F5AD /* StopInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934905D42B91B65400E1F5AD /* StopInfo.swift */; };
+		934905D72B91B65400E1F5AD /* StopInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934905D42B91B65400E1F5AD /* StopInfo.swift */; };
 		937667BB2B8DD7EF0018E530 /* ios_mvvm_swiftuiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937667BA2B8DD7EF0018E530 /* ios_mvvm_swiftuiApp.swift */; };
 		937667BD2B8DD7EF0018E530 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937667BC2B8DD7EF0018E530 /* ContentView.swift */; };
 		937667BF2B8DD7F10018E530 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 937667BE2B8DD7F10018E530 /* Assets.xcassets */; };
@@ -36,6 +73,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		934905982B8E582D00E1F5AD /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		9349059D2B8E59CA00E1F5AD /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		934905A12B8E5D8D00E1F5AD /* TripModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripModel.swift; sourceTree = "<group>"; };
+		934905A52B8E5F9000E1F5AD /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
+		934905A92B8E609000E1F5AD /* StopModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopModel.swift; sourceTree = "<group>"; };
+		934905AD2B8E61E900E1F5AD /* TripService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripService.swift; sourceTree = "<group>"; };
+		934905B12B8E62B500E1F5AD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		934905B52B8E648E00E1F5AD /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		934905B92B8EA35400E1F5AD /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		934905BD2B8ED28F00E1F5AD /* StopAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopAnnotation.swift; sourceTree = "<group>"; };
+		934905CC2B90C7C200E1F5AD /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		934905D42B91B65400E1F5AD /* StopInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopInfo.swift; sourceTree = "<group>"; };
 		937667B72B8DD7EF0018E530 /* ios-mvvm-swiftui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-mvvm-swiftui.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		937667BA2B8DD7EF0018E530 /* ios_mvvm_swiftuiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_mvvm_swiftuiApp.swift; sourceTree = "<group>"; };
 		937667BC2B8DD7EF0018E530 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				934905CB2B90A63400E1F5AD /* Polyline in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +125,59 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9349058A2B8E49A100E1F5AD /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				937667EA2B8DED220018E530 /* MapModule */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		9349058B2B8E49B700E1F5AD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				934905A12B8E5D8D00E1F5AD /* TripModel.swift */,
+				934905A52B8E5F9000E1F5AD /* LocationModel.swift */,
+				934905A92B8E609000E1F5AD /* StopModel.swift */,
+				934905D42B91B65400E1F5AD /* StopInfo.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9349058C2B8E49BC00E1F5AD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				934905982B8E582D00E1F5AD /* MapView.swift */,
+				934905CC2B90C7C200E1F5AD /* MainView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9349058D2B8E49C200E1F5AD /* ModelViews */ = {
+			isa = PBXGroup;
+			children = (
+				934905B52B8E648E00E1F5AD /* MapViewModel.swift */,
+			);
+			path = ModelViews;
+			sourceTree = "<group>";
+		};
+		9349058F2B8E49EC00E1F5AD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				934905AD2B8E61E900E1F5AD /* TripService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		9349059C2B8E59B800E1F5AD /* ComponentsView */ = {
+			isa = PBXGroup;
+			children = (
+				9349059D2B8E59CA00E1F5AD /* CardView.swift */,
+				934905BD2B8ED28F00E1F5AD /* StopAnnotation.swift */,
+			);
+			path = ComponentsView;
+			sourceTree = "<group>";
+		};
 		937667AE2B8DD7EE0018E530 = {
 			isa = PBXGroup;
 			children = (
@@ -98,7 +201,10 @@
 		937667B92B8DD7EF0018E530 /* ios-mvvm-swiftui */ = {
 			isa = PBXGroup;
 			children = (
+				934905B12B8E62B500E1F5AD /* Constants.swift */,
+				934905B92B8EA35400E1F5AD /* Errors.swift */,
 				937667BA2B8DD7EF0018E530 /* ios_mvvm_swiftuiApp.swift */,
+				9349058A2B8E49A100E1F5AD /* Modules */,
 				937667BC2B8DD7EF0018E530 /* ContentView.swift */,
 				937667BE2B8DD7F10018E530 /* Assets.xcassets */,
 				937667C32B8DD7F10018E530 /* Persistence.swift */,
@@ -133,6 +239,18 @@
 			path = "ios-mvvm-swiftuiUITests";
 			sourceTree = "<group>";
 		};
+		937667EA2B8DED220018E530 /* MapModule */ = {
+			isa = PBXGroup;
+			children = (
+				9349059C2B8E59B800E1F5AD /* ComponentsView */,
+				9349058F2B8E49EC00E1F5AD /* Services */,
+				9349058D2B8E49C200E1F5AD /* ModelViews */,
+				9349058C2B8E49BC00E1F5AD /* Views */,
+				9349058B2B8E49B700E1F5AD /* Models */,
+			);
+			path = MapModule;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -149,6 +267,9 @@
 			dependencies = (
 			);
 			name = "ios-mvvm-swiftui";
+			packageProductDependencies = (
+				934905CA2B90A63400E1F5AD /* Polyline */,
+			);
 			productName = "ios-mvvm-swiftui";
 			productReference = 937667B72B8DD7EF0018E530 /* ios-mvvm-swiftui.app */;
 			productType = "com.apple.product-type.application";
@@ -221,6 +342,9 @@
 				Base,
 			);
 			mainGroup = 937667AE2B8DD7EE0018E530;
+			packageReferences = (
+				934905C92B90A63400E1F5AD /* XCRemoteSwiftPackageReference "Polyline" */,
+			);
 			productRefGroup = 937667B82B8DD7EF0018E530 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -263,10 +387,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				934905A62B8E5F9000E1F5AD /* LocationModel.swift in Sources */,
+				934905B22B8E62B500E1F5AD /* Constants.swift in Sources */,
+				934905AA2B8E609000E1F5AD /* StopModel.swift in Sources */,
 				937667C42B8DD7F10018E530 /* Persistence.swift in Sources */,
 				937667BD2B8DD7EF0018E530 /* ContentView.swift in Sources */,
+				934905AE2B8E61E900E1F5AD /* TripService.swift in Sources */,
+				934905992B8E582D00E1F5AD /* MapView.swift in Sources */,
+				934905BA2B8EA35400E1F5AD /* Errors.swift in Sources */,
+				934905BE2B8ED28F00E1F5AD /* StopAnnotation.swift in Sources */,
+				934905A22B8E5D8D00E1F5AD /* TripModel.swift in Sources */,
 				937667BB2B8DD7EF0018E530 /* ios_mvvm_swiftuiApp.swift in Sources */,
+				934905D52B91B65400E1F5AD /* StopInfo.swift in Sources */,
+				934905CD2B90C7C200E1F5AD /* MainView.swift in Sources */,
+				9349059E2B8E59CA00E1F5AD /* CardView.swift in Sources */,
 				937667C72B8DD7F10018E530 /* ios_mvvm_swiftui.xcdatamodeld in Sources */,
+				934905B62B8E648E00E1F5AD /* MapViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +411,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				937667D12B8DD7F20018E530 /* ios_mvvm_swiftuiTests.swift in Sources */,
+				934905AB2B8E609000E1F5AD /* StopModel.swift in Sources */,
+				934905D62B91B65400E1F5AD /* StopInfo.swift in Sources */,
+				934905CE2B90C7C200E1F5AD /* MainView.swift in Sources */,
+				934905BF2B8ED28F00E1F5AD /* StopAnnotation.swift in Sources */,
+				9349059F2B8E59CA00E1F5AD /* CardView.swift in Sources */,
+				934905A32B8E5D8D00E1F5AD /* TripModel.swift in Sources */,
+				934905A72B8E5F9000E1F5AD /* LocationModel.swift in Sources */,
+				9349059A2B8E582D00E1F5AD /* MapView.swift in Sources */,
+				934905BB2B8EA35400E1F5AD /* Errors.swift in Sources */,
+				934905AF2B8E61E900E1F5AD /* TripService.swift in Sources */,
+				934905B32B8E62B500E1F5AD /* Constants.swift in Sources */,
+				934905B72B8E648E00E1F5AD /* MapViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,7 +431,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				937667DD2B8DD7F20018E530 /* ios_mvvm_swiftuiUITestsLaunchTests.swift in Sources */,
+				934905B82B8E648E00E1F5AD /* MapViewModel.swift in Sources */,
+				9349059B2B8E582D00E1F5AD /* MapView.swift in Sources */,
+				934905D72B91B65400E1F5AD /* StopInfo.swift in Sources */,
+				934905A02B8E59CA00E1F5AD /* CardView.swift in Sources */,
+				934905A42B8E5D8D00E1F5AD /* TripModel.swift in Sources */,
+				934905B02B8E61E900E1F5AD /* TripService.swift in Sources */,
+				934905A82B8E5F9000E1F5AD /* LocationModel.swift in Sources */,
+				934905BC2B8EA35400E1F5AD /* Errors.swift in Sources */,
+				934905C02B8ED28F00E1F5AD /* StopAnnotation.swift in Sources */,
 				937667DB2B8DD7F20018E530 /* ios_mvvm_swiftuiUITests.swift in Sources */,
+				934905CF2B90C7C200E1F5AD /* MainView.swift in Sources */,
+				934905AC2B8E609000E1F5AD /* StopModel.swift in Sources */,
+				934905B42B8E62B500E1F5AD /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,6 +587,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ios-mvvm-swiftui/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Do you want to share your location?";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -455,6 +616,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ios-mvvm-swiftui/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Do you want to share your location?";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -585,6 +747,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		934905C92B90A63400E1F5AD /* XCRemoteSwiftPackageReference "Polyline" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/raphaelmor/Polyline.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		934905CA2B90A63400E1F5AD /* Polyline */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 934905C92B90A63400E1F5AD /* XCRemoteSwiftPackageReference "Polyline" */;
+			productName = Polyline;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		937667C52B8DD7F10018E530 /* ios_mvvm_swiftui.xcdatamodeld */ = {
