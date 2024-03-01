@@ -8,6 +8,6 @@
 import Foundation
 
 struct Stop: Codable, Identifiable {
-    let id: Int
+    let id: Int?
     let point: Point?
 }
