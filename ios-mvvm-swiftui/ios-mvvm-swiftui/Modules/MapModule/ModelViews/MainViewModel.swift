@@ -9,7 +9,7 @@ import Foundation
 import MapKit
 import Polyline
 
-class MapViewModel: ObservableObject {
+class MainViewModel: ObservableObject {
     private let tripServiceDelegate: TripServiceDelegate
     
     @Published var region = MKCoordinateRegion(

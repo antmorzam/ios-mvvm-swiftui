@@ -14,7 +14,7 @@ enum FormAlert {
 
 struct ContactFormView: View {
     
-    @StateObject private var viewModel = ContactFormViewModel()
+    @StateObject private var viewModel = ContactFormViewModel(dataManager: CoreDataManager.shared)
     @State private var isDatePickerPresented = false
     @State private var isTimePickerPresented = false
     @State private var showAlert = false
@@ -45,15 +45,19 @@ struct ContactFormView: View {
                     if isDatePickerPresented {
                         DatePicker("", selection: $viewModel.formData.date, displayedComponents: [.date])
                             .datePickerStyle(WheelDatePickerStyle())
+                            .environment(\.locale, Locale(identifier: "es_ES"))
+                            .environment(\.timeZone, .current)
                     }
-                    Text(timeFormatter.string(from: viewModel.formData.time))
+                    Text(timeFormatter.string(from: viewModel.formData.date))
                         .foregroundColor(.blue)
                         .onTapGesture {
                             isTimePickerPresented.toggle()
                         }
                     if isTimePickerPresented {
-                        DatePicker("", selection: $viewModel.formData.time, displayedComponents: [.hourAndMinute])
+                        DatePicker("", selection: $viewModel.formData.date, displayedComponents: [.hourAndMinute])
                             .datePickerStyle(WheelDatePickerStyle())
+                            .environment(\.locale, Locale(identifier: "es_ES"))
+                            .environment(\.timeZone, .current)
                     }
                 }
                 Section("Details") {
@@ -112,16 +116,18 @@ struct ContactFormView: View {
     }
     
     private var dateFormatter: DateFormatter {
-         let formatter = DateFormatter()
-         formatter.dateStyle = .long
-         return formatter
-     }
-
-     private var timeFormatter: DateFormatter {
-         let formatter = DateFormatter()
-         formatter.timeStyle = .short
-         return formatter
-     }
+        let formatter = DateFormatter()
+        formatter.locale = Locale(identifier: "es_ES")
+        formatter.dateStyle = .long
+        return formatter
+    }
+    
+    private var timeFormatter: DateFormatter {
+        let formatter = DateFormatter()
+        formatter.locale = Locale(identifier: "es_ES")
+        formatter.timeStyle = .short
+        return formatter
+    }
 }
 
 struct ContactFormView_Previews: PreviewProvider {

@@ -21,7 +21,6 @@ extension Issue {
     @NSManaged public var email: String?
     @NSManaged public var phone: String?
     @NSManaged public var date: Date?
-    @NSManaged public var time: Date?
     @NSManaged public var details: String?
 
 }

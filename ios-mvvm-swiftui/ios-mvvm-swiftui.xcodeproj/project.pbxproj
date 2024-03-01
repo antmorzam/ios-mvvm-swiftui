@@ -28,9 +28,9 @@
 		934905B22B8E62B500E1F5AD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934905B12B8E62B500E1F5AD /* Constants.swift */; };
 		934905B32B8E62B500E1F5AD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934905B12B8E62B500E1F5AD /* Constants.swift */; };
 		934905B42B8E62B500E1F5AD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934905B12B8E62B500E1F5AD /* Constants.swift */; };
-		934905B62B8E648E00E1F5AD /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934905B52B8E648E00E1F5AD /* MapViewModel.swift */; };
-		934905B72B8E648E00E1F5AD /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934905B52B8E648E00E1F5AD /* MapViewModel.swift */; };
-		934905B82B8E648E00E1F5AD /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934905B52B8E648E00E1F5AD /* MapViewModel.swift */; };
+		934905B62B8E648E00E1F5AD /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934905B52B8E648E00E1F5AD /* MainViewModel.swift */; };
+		934905B72B8E648E00E1F5AD /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934905B52B8E648E00E1F5AD /* MainViewModel.swift */; };
+		934905B82B8E648E00E1F5AD /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934905B52B8E648E00E1F5AD /* MainViewModel.swift */; };
 		934905BA2B8EA35400E1F5AD /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934905B92B8EA35400E1F5AD /* Errors.swift */; };
 		934905BB2B8EA35400E1F5AD /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934905B92B8EA35400E1F5AD /* Errors.swift */; };
 		934905BC2B8EA35400E1F5AD /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934905B92B8EA35400E1F5AD /* Errors.swift */; };
@@ -47,9 +47,9 @@
 		934905D92B91FC9A00E1F5AD /* ContactFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934905D82B91FC9A00E1F5AD /* ContactFormView.swift */; };
 		934905DA2B91FC9A00E1F5AD /* ContactFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934905D82B91FC9A00E1F5AD /* ContactFormView.swift */; };
 		934905DB2B91FC9A00E1F5AD /* ContactFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934905D82B91FC9A00E1F5AD /* ContactFormView.swift */; };
-		934905DD2B920E4100E1F5AD /* FormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934905DC2B920E4100E1F5AD /* FormViewModel.swift */; };
-		934905DE2B920E4100E1F5AD /* FormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934905DC2B920E4100E1F5AD /* FormViewModel.swift */; };
-		934905DF2B920E4100E1F5AD /* FormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934905DC2B920E4100E1F5AD /* FormViewModel.swift */; };
+		934905DD2B920E4100E1F5AD /* ContactFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934905DC2B920E4100E1F5AD /* ContactFormViewModel.swift */; };
+		934905DE2B920E4100E1F5AD /* ContactFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934905DC2B920E4100E1F5AD /* ContactFormViewModel.swift */; };
+		934905DF2B920E4100E1F5AD /* ContactFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934905DC2B920E4100E1F5AD /* ContactFormViewModel.swift */; };
 		934905F32B92493B00E1F5AD /* Issue+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934905F12B92493B00E1F5AD /* Issue+CoreDataClass.swift */; };
 		934905F42B92493B00E1F5AD /* Issue+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934905F22B92493B00E1F5AD /* Issue+CoreDataProperties.swift */; };
 		934905F62B924C9B00E1F5AD /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934905F52B924C9B00E1F5AD /* CoreDataManager.swift */; };
@@ -87,13 +87,13 @@
 		934905A92B8E609000E1F5AD /* StopModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopModel.swift; sourceTree = "<group>"; };
 		934905AD2B8E61E900E1F5AD /* TripService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripService.swift; sourceTree = "<group>"; };
 		934905B12B8E62B500E1F5AD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		934905B52B8E648E00E1F5AD /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		934905B52B8E648E00E1F5AD /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		934905B92B8EA35400E1F5AD /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		934905BD2B8ED28F00E1F5AD /* StopAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopAnnotation.swift; sourceTree = "<group>"; };
 		934905CC2B90C7C200E1F5AD /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		934905D42B91B65400E1F5AD /* StopInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopInfo.swift; sourceTree = "<group>"; };
 		934905D82B91FC9A00E1F5AD /* ContactFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactFormView.swift; sourceTree = "<group>"; };
-		934905DC2B920E4100E1F5AD /* FormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewModel.swift; sourceTree = "<group>"; };
+		934905DC2B920E4100E1F5AD /* ContactFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactFormViewModel.swift; sourceTree = "<group>"; };
 		934905F12B92493B00E1F5AD /* Issue+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Issue+CoreDataClass.swift"; sourceTree = "<group>"; };
 		934905F22B92493B00E1F5AD /* Issue+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Issue+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		934905F52B924C9B00E1F5AD /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
@@ -157,7 +157,6 @@
 		9349058C2B8E49BC00E1F5AD /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				934905982B8E582D00E1F5AD /* MapView.swift */,
 				934905CC2B90C7C200E1F5AD /* MainView.swift */,
 				934905D82B91FC9A00E1F5AD /* ContactFormView.swift */,
 			);
@@ -167,8 +166,8 @@
 		9349058D2B8E49C200E1F5AD /* ModelViews */ = {
 			isa = PBXGroup;
 			children = (
-				934905B52B8E648E00E1F5AD /* MapViewModel.swift */,
-				934905DC2B920E4100E1F5AD /* FormViewModel.swift */,
+				934905B52B8E648E00E1F5AD /* MainViewModel.swift */,
+				934905DC2B920E4100E1F5AD /* ContactFormViewModel.swift */,
 			);
 			path = ModelViews;
 			sourceTree = "<group>";
@@ -184,6 +183,7 @@
 		9349059C2B8E59B800E1F5AD /* ComponentsView */ = {
 			isa = PBXGroup;
 			children = (
+				934905982B8E582D00E1F5AD /* MapView.swift */,
 				9349059D2B8E59CA00E1F5AD /* CardView.swift */,
 				934905BD2B8ED28F00E1F5AD /* StopAnnotation.swift */,
 			);
@@ -193,12 +193,28 @@
 		934905F02B92473600E1F5AD /* Database */ = {
 			isa = PBXGroup;
 			children = (
-				934905F12B92493B00E1F5AD /* Issue+CoreDataClass.swift */,
-				934905F22B92493B00E1F5AD /* Issue+CoreDataProperties.swift */,
+				934905F72B928CE900E1F5AD /* Entities */,
 				937667C52B8DD7F10018E530 /* ios_mvvm_swiftui.xcdatamodeld */,
 				934905F52B924C9B00E1F5AD /* CoreDataManager.swift */,
 			);
 			path = Database;
+			sourceTree = "<group>";
+		};
+		934905F72B928CE900E1F5AD /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				934905F82B928CF000E1F5AD /* Issue */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		934905F82B928CF000E1F5AD /* Issue */ = {
+			isa = PBXGroup;
+			children = (
+				934905F12B92493B00E1F5AD /* Issue+CoreDataClass.swift */,
+				934905F22B92493B00E1F5AD /* Issue+CoreDataProperties.swift */,
+			);
+			path = Issue;
 			sourceTree = "<group>";
 		};
 		937667AE2B8DD7EE0018E530 = {
@@ -420,12 +436,12 @@
 				937667BB2B8DD7EF0018E530 /* ios_mvvm_swiftuiApp.swift in Sources */,
 				934905F62B924C9B00E1F5AD /* CoreDataManager.swift in Sources */,
 				934905D52B91B65400E1F5AD /* StopInfo.swift in Sources */,
-				934905DD2B920E4100E1F5AD /* FormViewModel.swift in Sources */,
+				934905DD2B920E4100E1F5AD /* ContactFormViewModel.swift in Sources */,
 				934905CD2B90C7C200E1F5AD /* MainView.swift in Sources */,
 				9349059E2B8E59CA00E1F5AD /* CardView.swift in Sources */,
 				937667C72B8DD7F10018E530 /* ios_mvvm_swiftui.xcdatamodeld in Sources */,
 				934905D92B91FC9A00E1F5AD /* ContactFormView.swift in Sources */,
-				934905B62B8E648E00E1F5AD /* MapViewModel.swift in Sources */,
+				934905B62B8E648E00E1F5AD /* MainViewModel.swift in Sources */,
 				934905F32B92493B00E1F5AD /* Issue+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,7 +450,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				934905DE2B920E4100E1F5AD /* FormViewModel.swift in Sources */,
+				934905DE2B920E4100E1F5AD /* ContactFormViewModel.swift in Sources */,
 				937667D12B8DD7F20018E530 /* ios_mvvm_swiftuiTests.swift in Sources */,
 				934905AB2B8E609000E1F5AD /* StopModel.swift in Sources */,
 				934905DA2B91FC9A00E1F5AD /* ContactFormView.swift in Sources */,
@@ -448,7 +464,7 @@
 				934905BB2B8EA35400E1F5AD /* Errors.swift in Sources */,
 				934905AF2B8E61E900E1F5AD /* TripService.swift in Sources */,
 				934905B32B8E62B500E1F5AD /* Constants.swift in Sources */,
-				934905B72B8E648E00E1F5AD /* MapViewModel.swift in Sources */,
+				934905B72B8E648E00E1F5AD /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,7 +473,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				937667DD2B8DD7F20018E530 /* ios_mvvm_swiftuiUITestsLaunchTests.swift in Sources */,
-				934905B82B8E648E00E1F5AD /* MapViewModel.swift in Sources */,
+				934905B82B8E648E00E1F5AD /* MainViewModel.swift in Sources */,
 				9349059B2B8E582D00E1F5AD /* MapView.swift in Sources */,
 				934905D72B91B65400E1F5AD /* StopInfo.swift in Sources */,
 				934905A02B8E59CA00E1F5AD /* CardView.swift in Sources */,
@@ -470,7 +486,7 @@
 				934905CF2B90C7C200E1F5AD /* MainView.swift in Sources */,
 				934905DB2B91FC9A00E1F5AD /* ContactFormView.swift in Sources */,
 				934905AC2B8E609000E1F5AD /* StopModel.swift in Sources */,
-				934905DF2B920E4100E1F5AD /* FormViewModel.swift in Sources */,
+				934905DF2B920E4100E1F5AD /* ContactFormViewModel.swift in Sources */,
 				934905B42B8E62B500E1F5AD /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

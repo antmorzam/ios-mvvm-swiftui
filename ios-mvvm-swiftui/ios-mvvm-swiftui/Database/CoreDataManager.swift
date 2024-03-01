@@ -7,10 +7,17 @@
 
 import CoreData
 
-class CoreDataManager {
-    static let shared = CoreDataManager()
+protocol DataManager: AnyObject {
+    var viewContext: NSManagedObjectContext { get }
+    
+    func saveContext() -> Bool
+    func getIssues() -> [Issue]
+}
 
+class CoreDataManager: DataManager {
+    static let shared = CoreDataManager()
     private let persistentContainer: NSPersistentContainer
+    
     var viewContext: NSManagedObjectContext {
         return persistentContainer.viewContext
     }
@@ -24,7 +31,7 @@ class CoreDataManager {
         }
     }
 
-    func saveIssue() -> Bool {
+    func saveContext() -> Bool {
         guard viewContext.hasChanges else { return false }
 
         do {

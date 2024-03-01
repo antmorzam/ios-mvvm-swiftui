@@ -15,7 +15,7 @@ enum MainAlert {
 }
 
 struct MainView: View {
-    @StateObject private var viewModel = MapViewModel(tripServiceDelegate: TripService())
+    @StateObject private var viewModel = MainViewModel(tripServiceDelegate: TripService())
     @State var polyline: String = ""
     @State var stopIdentifier: Int?
     @State var selectedStop: StopInfo?
