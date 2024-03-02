@@ -24,7 +24,7 @@ struct MainView: View {
     @State var addIssue = false
     
     var body: some View {
-        ZStack(alignment: .bottom) {
+        ZStack(alignment: .center) {
             MapView(stopIdentifier: $stopIdentifier, region: viewModel.region, lineCoordinates: viewModel.coordinates, annotations: viewModel.selectedStops)
                 .edgesIgnoringSafeArea(.all)
                 .onReceive(viewModel.$selectedStop) { stopInfo in
@@ -33,24 +33,38 @@ struct MainView: View {
                         mainAlert = .info
                     }
                 }
-            ScrollView(.horizontal, showsIndicators: false) {
-                HStack(spacing: 10) {
-                    ForEach(viewModel.tripList, id: \.self) { trip in
-                        CardView(status: trip.status,
-                                 origin: trip.origin.address,
-                                 destination: trip.destination.address,
-                                 isSelected: Binding(
-                                    get: { viewModel.selectedTrip == trip },
-                                    set: { selected in
-                                        viewModel.selectedTrip = selected ? trip : nil
-                                    }
-                                 )
-                        )
-                        .onTapGesture {
-                            viewModel.setSelectedTrip(trip)
+            VStack {
+                Spacer()
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack(spacing: 10) {
+                        if viewModel.isLoading {
+                            CardView(isLoading: true, isSelected: .constant(false))
+                                .frame(width: UIScreen.main.bounds.width)
+                        } else {
+                            ForEach(viewModel.tripList, id: \.self) { trip in
+                                CardView(status: trip.status,
+                                         origin: trip.origin.address,
+                                         destination: trip.destination.address,
+                                         isLoading: viewModel.isLoading,
+                                         isSelected: Binding(
+                                            get: { viewModel.selectedTrip == trip },
+                                            set: { selected in
+                                                viewModel.selectedTrip = selected ? trip : nil
+                                            }
+                                         )
+                                )
+                                .onTapGesture {
+                                    viewModel.setSelectedTrip(trip)
+                                }
+                                .frame(width: UIScreen.main.bounds.width)
+                            }
                         }
-                        .frame(width: UIScreen.main.bounds.width - 20)
                     }
+                }
+            }
+            if viewModel.isLoadingStopInfo {
+                VStack{
+                    LoadingView()
                 }
             }
         }
@@ -66,11 +80,6 @@ struct MainView: View {
                 showAlert = true
                 mainAlert = .error
             }
-        }
-        .alert(isPresented: $showAlert) {
-            Alert(title: Text("Error"),
-                  message: Text(viewModel.error?.description ?? "Unknown error"),
-                  dismissButton: .default(Text("OK")))
         }
         .onChange(of: stopIdentifier) { newSelectedStop in
             Task {
@@ -90,7 +99,6 @@ struct MainView: View {
                              message: Text("\(viewModel.selectedStop?.address ?? "").\n User: \(viewModel.selectedStop?.userName ?? "")"),
                              dismissButton: .default(Text("OK")))
             }
-            
         }
         .sheet(isPresented: $addIssue) {
             FormView(isPresented: $addIssue)
@@ -100,37 +108,6 @@ struct MainView: View {
             AddIssueView(addIssue: $addIssue),
             alignment: .topTrailing
         )
-    }
-}
-
-struct FormView: View {
-    @Binding var isPresented: Bool
-
-    var body: some View {
-        ContactFormView()
-        .padding()
-    }
-}
-
-struct AddIssueView: View {
-    @Binding var addIssue: Bool
-    
-    var body: some View {
-        Button(action: {
-            addIssue = true
-        }) {
-            Image(systemName: "note.text.badge.plus")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 30, height: 30)
-                .foregroundColor(.blue)
-                .padding()
-                .background(Color.white)
-                .clipShape(Circle())
-                .shadow(radius: 5)
-        }
-        .padding(.trailing, 16)
-        .padding(.bottom, 16)
     }
 }
 

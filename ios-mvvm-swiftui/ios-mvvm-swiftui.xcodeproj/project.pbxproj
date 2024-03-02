@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		9312E72D2B92C12200BBFC9B /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 9312E72C2B92C12200BBFC9B /* SnapshotTesting */; };
+		9312E72F2B92C37000BBFC9B /* FormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9312E72E2B92C37000BBFC9B /* FormView.swift */; };
+		9312E7302B92C37000BBFC9B /* FormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9312E72E2B92C37000BBFC9B /* FormView.swift */; };
+		9312E7312B92C37000BBFC9B /* FormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9312E72E2B92C37000BBFC9B /* FormView.swift */; };
+		9312E7332B92C39A00BBFC9B /* AddIssueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9312E7322B92C39A00BBFC9B /* AddIssueView.swift */; };
+		9312E7342B92C39A00BBFC9B /* AddIssueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9312E7322B92C39A00BBFC9B /* AddIssueView.swift */; };
+		9312E7352B92C39A00BBFC9B /* AddIssueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9312E7322B92C39A00BBFC9B /* AddIssueView.swift */; };
+		9312E7372B93569800BBFC9B /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9312E7362B93569800BBFC9B /* LoadingView.swift */; };
+		9312E7382B93569800BBFC9B /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9312E7362B93569800BBFC9B /* LoadingView.swift */; };
+		9312E7392B93569800BBFC9B /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9312E7362B93569800BBFC9B /* LoadingView.swift */; };
 		934905992B8E582D00E1F5AD /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934905982B8E582D00E1F5AD /* MapView.swift */; };
 		9349059A2B8E582D00E1F5AD /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934905982B8E582D00E1F5AD /* MapView.swift */; };
 		9349059B2B8E582D00E1F5AD /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934905982B8E582D00E1F5AD /* MapView.swift */; };
@@ -89,6 +98,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9312E72E2B92C37000BBFC9B /* FormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormView.swift; sourceTree = "<group>"; };
+		9312E7322B92C39A00BBFC9B /* AddIssueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddIssueView.swift; sourceTree = "<group>"; };
+		9312E7362B93569800BBFC9B /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		934905982B8E582D00E1F5AD /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		9349059D2B8E59CA00E1F5AD /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		934905A12B8E5D8D00E1F5AD /* TripModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripModel.swift; sourceTree = "<group>"; };
@@ -192,14 +204,17 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
-		9349059C2B8E59B800E1F5AD /* ComponentsView */ = {
+		9349059C2B8E59B800E1F5AD /* Components */ = {
 			isa = PBXGroup;
 			children = (
 				934905982B8E582D00E1F5AD /* MapView.swift */,
 				9349059D2B8E59CA00E1F5AD /* CardView.swift */,
 				934905BD2B8ED28F00E1F5AD /* StopAnnotation.swift */,
+				9312E72E2B92C37000BBFC9B /* FormView.swift */,
+				9312E7322B92C39A00BBFC9B /* AddIssueView.swift */,
+				9312E7362B93569800BBFC9B /* LoadingView.swift */,
 			);
-			path = ComponentsView;
+			path = Components;
 			sourceTree = "<group>";
 		};
 		934905F02B92473600E1F5AD /* Database */ = {
@@ -307,7 +322,7 @@
 		937667EA2B8DED220018E530 /* MapModule */ = {
 			isa = PBXGroup;
 			children = (
-				9349059C2B8E59B800E1F5AD /* ComponentsView */,
+				9349059C2B8E59B800E1F5AD /* Components */,
 				9349058F2B8E49EC00E1F5AD /* Services */,
 				9349058D2B8E49C200E1F5AD /* ModelViews */,
 				9349058C2B8E49BC00E1F5AD /* Views */,
@@ -463,6 +478,7 @@
 				934905A62B8E5F9000E1F5AD /* LocationModel.swift in Sources */,
 				934905F42B92493B00E1F5AD /* Issue+CoreDataProperties.swift in Sources */,
 				934905B22B8E62B500E1F5AD /* Constants.swift in Sources */,
+				9312E7372B93569800BBFC9B /* LoadingView.swift in Sources */,
 				934905AA2B8E609000E1F5AD /* StopModel.swift in Sources */,
 				934905AE2B8E61E900E1F5AD /* TripService.swift in Sources */,
 				934905992B8E582D00E1F5AD /* MapView.swift in Sources */,
@@ -472,9 +488,11 @@
 				937667BB2B8DD7EF0018E530 /* ios_mvvm_swiftuiApp.swift in Sources */,
 				934905F62B924C9B00E1F5AD /* CoreDataManager.swift in Sources */,
 				934905D52B91B65400E1F5AD /* StopInfo.swift in Sources */,
+				9312E72F2B92C37000BBFC9B /* FormView.swift in Sources */,
 				934905DD2B920E4100E1F5AD /* ContactFormViewModel.swift in Sources */,
 				934905CD2B90C7C200E1F5AD /* MainView.swift in Sources */,
 				9349059E2B8E59CA00E1F5AD /* CardView.swift in Sources */,
+				9312E7332B92C39A00BBFC9B /* AddIssueView.swift in Sources */,
 				937667C72B8DD7F10018E530 /* ios_mvvm_swiftui.xcdatamodeld in Sources */,
 				934905D92B91FC9A00E1F5AD /* ContactFormView.swift in Sources */,
 				934905B62B8E648E00E1F5AD /* MainViewModel.swift in Sources */,
@@ -489,6 +507,7 @@
 				934905DE2B920E4100E1F5AD /* ContactFormViewModel.swift in Sources */,
 				934905FE2B92A11200E1F5AD /* Issue+CoreDataClass.swift in Sources */,
 				937667D12B8DD7F20018E530 /* ios_mvvm_swiftuiTests.swift in Sources */,
+				9312E7382B93569800BBFC9B /* LoadingView.swift in Sources */,
 				934905AB2B8E609000E1F5AD /* StopModel.swift in Sources */,
 				934905DA2B91FC9A00E1F5AD /* ContactFormView.swift in Sources */,
 				934905FC2B92A10B00E1F5AD /* CoreDataManager.swift in Sources */,
@@ -498,9 +517,11 @@
 				934906002B92A13E00E1F5AD /* Issue+CoreDataProperties.swift in Sources */,
 				9349059F2B8E59CA00E1F5AD /* CardView.swift in Sources */,
 				934905A32B8E5D8D00E1F5AD /* TripModel.swift in Sources */,
+				9312E7302B92C37000BBFC9B /* FormView.swift in Sources */,
 				934905A72B8E5F9000E1F5AD /* LocationModel.swift in Sources */,
 				934905FB2B929BBB00E1F5AD /* TripServiceMock.swift in Sources */,
 				9349059A2B8E582D00E1F5AD /* MapView.swift in Sources */,
+				9312E7342B92C39A00BBFC9B /* AddIssueView.swift in Sources */,
 				934905BB2B8EA35400E1F5AD /* Errors.swift in Sources */,
 				934905AF2B8E61E900E1F5AD /* TripService.swift in Sources */,
 				934905B32B8E62B500E1F5AD /* Constants.swift in Sources */,
@@ -517,6 +538,8 @@
 				9349059B2B8E582D00E1F5AD /* MapView.swift in Sources */,
 				934905D72B91B65400E1F5AD /* StopInfo.swift in Sources */,
 				934905FD2B92A10C00E1F5AD /* CoreDataManager.swift in Sources */,
+				9312E7392B93569800BBFC9B /* LoadingView.swift in Sources */,
+				9312E7352B92C39A00BBFC9B /* AddIssueView.swift in Sources */,
 				934905A02B8E59CA00E1F5AD /* CardView.swift in Sources */,
 				934905A42B8E5D8D00E1F5AD /* TripModel.swift in Sources */,
 				934905B02B8E61E900E1F5AD /* TripService.swift in Sources */,
@@ -529,6 +552,7 @@
 				934905DB2B91FC9A00E1F5AD /* ContactFormView.swift in Sources */,
 				934905AC2B8E609000E1F5AD /* StopModel.swift in Sources */,
 				934905DF2B920E4100E1F5AD /* ContactFormViewModel.swift in Sources */,
+				9312E7312B92C37000BBFC9B /* FormView.swift in Sources */,
 				934905B42B8E62B500E1F5AD /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

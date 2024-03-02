@@ -22,6 +22,8 @@ class MainViewModel: ObservableObject {
     @Published var selectedStops: [StopAnnotation] = []
     @Published var coordinates: [CLLocationCoordinate2D] = []
     @Published var selectedStop: StopInfo?
+    @Published var isLoading = false
+    @Published var isLoadingStopInfo = false
     
     init(tripServiceDelegate: TripServiceDelegate) {
         self.tripServiceDelegate = tripServiceDelegate
@@ -30,6 +32,10 @@ class MainViewModel: ObservableObject {
     // MARK: - Calls to Services
     
     func loadData() async throws {
+        DispatchQueue.main.async {
+            self.isLoading = true
+        }
+
         do {
             let result = try await tripServiceDelegate.fetchTrip()
             await self.setTripList(result)
@@ -39,6 +45,9 @@ class MainViewModel: ObservableObject {
     }
     
     func getStopInfo() async throws {
+        DispatchQueue.main.async {
+            self.isLoadingStopInfo = true
+        }
         do {
             let result = try await tripServiceDelegate.fetchStop()
             await self.setStop(result)
@@ -49,16 +58,20 @@ class MainViewModel: ObservableObject {
     
     @MainActor
     func setTripList(_ trips: [Trip]) {
+        isLoading = false
         tripList = trips
     }
     
     @MainActor
     func showError(_ error: UserError) {
+        isLoading = false
+        isLoadingStopInfo = false
         self.error = error
     }
     
     @MainActor
     func setStop(_ stopInfo: StopInfo?) {
+        isLoadingStopInfo = false
         selectedStop = stopInfo
     }
     
