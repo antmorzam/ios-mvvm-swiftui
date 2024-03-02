@@ -9,7 +9,7 @@ import Foundation
 
 protocol TripServiceDelegate: AnyObject {
     func fetchTrip() async throws -> [Trip]
-    func fetchStop() async throws -> StopInfo
+    func fetchStop() async throws -> StopInfo?
 }
 
 class TripService: TripServiceDelegate {
@@ -24,7 +24,7 @@ class TripService: TripServiceDelegate {
         return tripList
     }
     
-    func fetchStop() async throws -> StopInfo {
+    func fetchStop() async throws -> StopInfo? {
         guard let url = URL(string: Constants.API.stopEndpoint) else {
             throw URLError(.badURL)
         }

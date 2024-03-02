@@ -58,7 +58,7 @@ class MainViewModel: ObservableObject {
     }
     
     @MainActor
-    func setStop(_ stopInfo: StopInfo) {
+    func setStop(_ stopInfo: StopInfo?) {
         selectedStop = stopInfo
     }
     

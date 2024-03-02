@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9312E72D2B92C12200BBFC9B /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 9312E72C2B92C12200BBFC9B /* SnapshotTesting */; };
 		934905992B8E582D00E1F5AD /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934905982B8E582D00E1F5AD /* MapView.swift */; };
 		9349059A2B8E582D00E1F5AD /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934905982B8E582D00E1F5AD /* MapView.swift */; };
 		9349059B2B8E582D00E1F5AD /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934905982B8E582D00E1F5AD /* MapView.swift */; };
@@ -53,13 +54,21 @@
 		934905F32B92493B00E1F5AD /* Issue+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934905F12B92493B00E1F5AD /* Issue+CoreDataClass.swift */; };
 		934905F42B92493B00E1F5AD /* Issue+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934905F22B92493B00E1F5AD /* Issue+CoreDataProperties.swift */; };
 		934905F62B924C9B00E1F5AD /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934905F52B924C9B00E1F5AD /* CoreDataManager.swift */; };
+		934905FB2B929BBB00E1F5AD /* TripServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934905FA2B929BBB00E1F5AD /* TripServiceMock.swift */; };
+		934905FC2B92A10B00E1F5AD /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934905F52B924C9B00E1F5AD /* CoreDataManager.swift */; };
+		934905FD2B92A10C00E1F5AD /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934905F52B924C9B00E1F5AD /* CoreDataManager.swift */; };
+		934905FE2B92A11200E1F5AD /* Issue+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934905F12B92493B00E1F5AD /* Issue+CoreDataClass.swift */; };
+		934905FF2B92A11200E1F5AD /* Issue+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934905F12B92493B00E1F5AD /* Issue+CoreDataClass.swift */; };
+		934906002B92A13E00E1F5AD /* Issue+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934905F22B92493B00E1F5AD /* Issue+CoreDataProperties.swift */; };
+		934906012B92A13F00E1F5AD /* Issue+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934905F22B92493B00E1F5AD /* Issue+CoreDataProperties.swift */; };
+		934906042B92A1F500E1F5AD /* Polyline in Frameworks */ = {isa = PBXBuildFile; productRef = 934906032B92A1F500E1F5AD /* Polyline */; };
+		934906062B92A1FE00E1F5AD /* Polyline in Frameworks */ = {isa = PBXBuildFile; productRef = 934906052B92A1FE00E1F5AD /* Polyline */; };
 		937667BB2B8DD7EF0018E530 /* ios_mvvm_swiftuiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937667BA2B8DD7EF0018E530 /* ios_mvvm_swiftuiApp.swift */; };
 		937667BF2B8DD7F10018E530 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 937667BE2B8DD7F10018E530 /* Assets.xcassets */; };
 		937667C22B8DD7F10018E530 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 937667C12B8DD7F10018E530 /* Preview Assets.xcassets */; };
 		937667C72B8DD7F10018E530 /* ios_mvvm_swiftui.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 937667C52B8DD7F10018E530 /* ios_mvvm_swiftui.xcdatamodeld */; };
 		937667D12B8DD7F20018E530 /* ios_mvvm_swiftuiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937667D02B8DD7F20018E530 /* ios_mvvm_swiftuiTests.swift */; };
 		937667DB2B8DD7F20018E530 /* ios_mvvm_swiftuiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937667DA2B8DD7F20018E530 /* ios_mvvm_swiftuiUITests.swift */; };
-		937667DD2B8DD7F20018E530 /* ios_mvvm_swiftuiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937667DC2B8DD7F20018E530 /* ios_mvvm_swiftuiUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +106,7 @@
 		934905F12B92493B00E1F5AD /* Issue+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Issue+CoreDataClass.swift"; sourceTree = "<group>"; };
 		934905F22B92493B00E1F5AD /* Issue+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Issue+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		934905F52B924C9B00E1F5AD /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		934905FA2B929BBB00E1F5AD /* TripServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripServiceMock.swift; sourceTree = "<group>"; };
 		937667B72B8DD7EF0018E530 /* ios-mvvm-swiftui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-mvvm-swiftui.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		937667BA2B8DD7EF0018E530 /* ios_mvvm_swiftuiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_mvvm_swiftuiApp.swift; sourceTree = "<group>"; };
 		937667BE2B8DD7F10018E530 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -106,7 +116,6 @@
 		937667D02B8DD7F20018E530 /* ios_mvvm_swiftuiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_mvvm_swiftuiTests.swift; sourceTree = "<group>"; };
 		937667D62B8DD7F20018E530 /* ios-mvvm-swiftuiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-mvvm-swiftuiUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		937667DA2B8DD7F20018E530 /* ios_mvvm_swiftuiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_mvvm_swiftuiUITests.swift; sourceTree = "<group>"; };
-		937667DC2B8DD7F20018E530 /* ios_mvvm_swiftuiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_mvvm_swiftuiUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +131,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				934906042B92A1F500E1F5AD /* Polyline in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,6 +139,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				934906062B92A1FE00E1F5AD /* Polyline in Frameworks */,
+				9312E72D2B92C12200BBFC9B /* SnapshotTesting in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,6 +229,21 @@
 			path = Issue;
 			sourceTree = "<group>";
 		};
+		934905F92B929B9100E1F5AD /* MockServices */ = {
+			isa = PBXGroup;
+			children = (
+				934905FA2B929BBB00E1F5AD /* TripServiceMock.swift */,
+			);
+			path = MockServices;
+			sourceTree = "<group>";
+		};
+		934906022B92A1F500E1F5AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		937667AE2B8DD7EE0018E530 = {
 			isa = PBXGroup;
 			children = (
@@ -224,6 +251,7 @@
 				937667CF2B8DD7F20018E530 /* ios-mvvm-swiftuiTests */,
 				937667D92B8DD7F20018E530 /* ios-mvvm-swiftuiUITests */,
 				937667B82B8DD7EF0018E530 /* Products */,
+				934906022B92A1F500E1F5AD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -262,6 +290,7 @@
 		937667CF2B8DD7F20018E530 /* ios-mvvm-swiftuiTests */ = {
 			isa = PBXGroup;
 			children = (
+				934905F92B929B9100E1F5AD /* MockServices */,
 				937667D02B8DD7F20018E530 /* ios_mvvm_swiftuiTests.swift */,
 			);
 			path = "ios-mvvm-swiftuiTests";
@@ -271,7 +300,6 @@
 			isa = PBXGroup;
 			children = (
 				937667DA2B8DD7F20018E530 /* ios_mvvm_swiftuiUITests.swift */,
-				937667DC2B8DD7F20018E530 /* ios_mvvm_swiftuiUITestsLaunchTests.swift */,
 			);
 			path = "ios-mvvm-swiftuiUITests";
 			sourceTree = "<group>";
@@ -325,6 +353,9 @@
 				937667CE2B8DD7F20018E530 /* PBXTargetDependency */,
 			);
 			name = "ios-mvvm-swiftuiTests";
+			packageProductDependencies = (
+				934906032B92A1F500E1F5AD /* Polyline */,
+			);
 			productName = "ios-mvvm-swiftuiTests";
 			productReference = 937667CC2B8DD7F20018E530 /* ios-mvvm-swiftuiTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -343,6 +374,10 @@
 				937667D82B8DD7F20018E530 /* PBXTargetDependency */,
 			);
 			name = "ios-mvvm-swiftuiUITests";
+			packageProductDependencies = (
+				934906052B92A1FE00E1F5AD /* Polyline */,
+				9312E72C2B92C12200BBFC9B /* SnapshotTesting */,
+			);
 			productName = "ios-mvvm-swiftuiUITests";
 			productReference = 937667D62B8DD7F20018E530 /* ios-mvvm-swiftuiUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -381,6 +416,7 @@
 			mainGroup = 937667AE2B8DD7EE0018E530;
 			packageReferences = (
 				934905C92B90A63400E1F5AD /* XCRemoteSwiftPackageReference "Polyline" */,
+				9312E7272B92C10800BBFC9B /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
 			);
 			productRefGroup = 937667B82B8DD7EF0018E530 /* Products */;
 			projectDirPath = "";
@@ -451,15 +487,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				934905DE2B920E4100E1F5AD /* ContactFormViewModel.swift in Sources */,
+				934905FE2B92A11200E1F5AD /* Issue+CoreDataClass.swift in Sources */,
 				937667D12B8DD7F20018E530 /* ios_mvvm_swiftuiTests.swift in Sources */,
 				934905AB2B8E609000E1F5AD /* StopModel.swift in Sources */,
 				934905DA2B91FC9A00E1F5AD /* ContactFormView.swift in Sources */,
+				934905FC2B92A10B00E1F5AD /* CoreDataManager.swift in Sources */,
 				934905D62B91B65400E1F5AD /* StopInfo.swift in Sources */,
 				934905CE2B90C7C200E1F5AD /* MainView.swift in Sources */,
 				934905BF2B8ED28F00E1F5AD /* StopAnnotation.swift in Sources */,
+				934906002B92A13E00E1F5AD /* Issue+CoreDataProperties.swift in Sources */,
 				9349059F2B8E59CA00E1F5AD /* CardView.swift in Sources */,
 				934905A32B8E5D8D00E1F5AD /* TripModel.swift in Sources */,
 				934905A72B8E5F9000E1F5AD /* LocationModel.swift in Sources */,
+				934905FB2B929BBB00E1F5AD /* TripServiceMock.swift in Sources */,
 				9349059A2B8E582D00E1F5AD /* MapView.swift in Sources */,
 				934905BB2B8EA35400E1F5AD /* Errors.swift in Sources */,
 				934905AF2B8E61E900E1F5AD /* TripService.swift in Sources */,
@@ -472,13 +512,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				937667DD2B8DD7F20018E530 /* ios_mvvm_swiftuiUITestsLaunchTests.swift in Sources */,
+				934905FF2B92A11200E1F5AD /* Issue+CoreDataClass.swift in Sources */,
 				934905B82B8E648E00E1F5AD /* MainViewModel.swift in Sources */,
 				9349059B2B8E582D00E1F5AD /* MapView.swift in Sources */,
 				934905D72B91B65400E1F5AD /* StopInfo.swift in Sources */,
+				934905FD2B92A10C00E1F5AD /* CoreDataManager.swift in Sources */,
 				934905A02B8E59CA00E1F5AD /* CardView.swift in Sources */,
 				934905A42B8E5D8D00E1F5AD /* TripModel.swift in Sources */,
 				934905B02B8E61E900E1F5AD /* TripService.swift in Sources */,
+				934906012B92A13F00E1F5AD /* Issue+CoreDataProperties.swift in Sources */,
 				934905A82B8E5F9000E1F5AD /* LocationModel.swift in Sources */,
 				934905BC2B8EA35400E1F5AD /* Errors.swift in Sources */,
 				934905C02B8ED28F00E1F5AD /* StopAnnotation.swift in Sources */,
@@ -630,17 +672,19 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ios-mvvm-swiftui/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Do you want to share your location?";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "antmorzam.ios-mvvm-swiftui";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -659,17 +703,19 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ios-mvvm-swiftui/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Do you want to share your location?";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "antmorzam.ios-mvvm-swiftui";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -688,6 +734,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "antmorzam.ios-mvvm-swiftuiTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -707,6 +754,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "antmorzam.ios-mvvm-swiftuiTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -724,6 +772,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "antmorzam.ios-mvvm-swiftuiUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -741,6 +790,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "antmorzam.ios-mvvm-swiftuiUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -793,6 +843,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		9312E7272B92C10800BBFC9B /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-snapshot-testing";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 		934905C92B90A63400E1F5AD /* XCRemoteSwiftPackageReference "Polyline" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/raphaelmor/Polyline.git";
@@ -804,7 +862,22 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		9312E72C2B92C12200BBFC9B /* SnapshotTesting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9312E7272B92C10800BBFC9B /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
+			productName = SnapshotTesting;
+		};
 		934905CA2B90A63400E1F5AD /* Polyline */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 934905C92B90A63400E1F5AD /* XCRemoteSwiftPackageReference "Polyline" */;
+			productName = Polyline;
+		};
+		934906032B92A1F500E1F5AD /* Polyline */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 934905C92B90A63400E1F5AD /* XCRemoteSwiftPackageReference "Polyline" */;
+			productName = Polyline;
+		};
+		934906052B92A1FE00E1F5AD /* Polyline */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 934905C92B90A63400E1F5AD /* XCRemoteSwiftPackageReference "Polyline" */;
 			productName = Polyline;
