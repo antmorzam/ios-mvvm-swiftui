@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		930DB4412B94CC020077FD55 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930DB4402B94CC020077FD55 /* LocationManager.swift */; };
+		930DB4422B94CC020077FD55 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930DB4402B94CC020077FD55 /* LocationManager.swift */; };
+		930DB4432B94CC020077FD55 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930DB4402B94CC020077FD55 /* LocationManager.swift */; };
 		9312E72D2B92C12200BBFC9B /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 9312E72C2B92C12200BBFC9B /* SnapshotTesting */; };
 		9312E72F2B92C37000BBFC9B /* FormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9312E72E2B92C37000BBFC9B /* FormView.swift */; };
 		9312E7302B92C37000BBFC9B /* FormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9312E72E2B92C37000BBFC9B /* FormView.swift */; };
@@ -98,6 +101,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		930DB4402B94CC020077FD55 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		9312E72E2B92C37000BBFC9B /* FormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormView.swift; sourceTree = "<group>"; };
 		9312E7322B92C39A00BBFC9B /* AddIssueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddIssueView.swift; sourceTree = "<group>"; };
 		9312E7362B93569800BBFC9B /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
@@ -159,6 +163,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		930DB4442B94CC100077FD55 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				934905B12B8E62B500E1F5AD /* Constants.swift */,
+				934905B92B8EA35400E1F5AD /* Errors.swift */,
+				930DB4402B94CC020077FD55 /* LocationManager.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		9349058A2B8E49A100E1F5AD /* Modules */ = {
 			isa = PBXGroup;
 			children = (
@@ -283,8 +297,7 @@
 		937667B92B8DD7EF0018E530 /* ios-mvvm-swiftui */ = {
 			isa = PBXGroup;
 			children = (
-				934905B12B8E62B500E1F5AD /* Constants.swift */,
-				934905B92B8EA35400E1F5AD /* Errors.swift */,
+				930DB4442B94CC100077FD55 /* App */,
 				937667BA2B8DD7EF0018E530 /* ios_mvvm_swiftuiApp.swift */,
 				934905F02B92473600E1F5AD /* Database */,
 				9349058A2B8E49A100E1F5AD /* Modules */,
@@ -482,6 +495,7 @@
 				934905AA2B8E609000E1F5AD /* StopModel.swift in Sources */,
 				934905AE2B8E61E900E1F5AD /* TripService.swift in Sources */,
 				934905992B8E582D00E1F5AD /* MapView.swift in Sources */,
+				930DB4412B94CC020077FD55 /* LocationManager.swift in Sources */,
 				934905BA2B8EA35400E1F5AD /* Errors.swift in Sources */,
 				934905BE2B8ED28F00E1F5AD /* StopAnnotation.swift in Sources */,
 				934905A22B8E5D8D00E1F5AD /* TripModel.swift in Sources */,
@@ -511,6 +525,7 @@
 				934905AB2B8E609000E1F5AD /* StopModel.swift in Sources */,
 				934905DA2B91FC9A00E1F5AD /* ContactFormView.swift in Sources */,
 				934905FC2B92A10B00E1F5AD /* CoreDataManager.swift in Sources */,
+				930DB4422B94CC020077FD55 /* LocationManager.swift in Sources */,
 				934905D62B91B65400E1F5AD /* StopInfo.swift in Sources */,
 				934905CE2B90C7C200E1F5AD /* MainView.swift in Sources */,
 				934905BF2B8ED28F00E1F5AD /* StopAnnotation.swift in Sources */,
@@ -547,6 +562,7 @@
 				934905A82B8E5F9000E1F5AD /* LocationModel.swift in Sources */,
 				934905BC2B8EA35400E1F5AD /* Errors.swift in Sources */,
 				934905C02B8ED28F00E1F5AD /* StopAnnotation.swift in Sources */,
+				930DB4432B94CC020077FD55 /* LocationManager.swift in Sources */,
 				937667DB2B8DD7F20018E530 /* ios_mvvm_swiftuiUITests.swift in Sources */,
 				934905CF2B90C7C200E1F5AD /* MainView.swift in Sources */,
 				934905DB2B91FC9A00E1F5AD /* ContactFormView.swift in Sources */,

@@ -16,6 +16,8 @@ enum MainAlert {
 
 struct MainView: View {
     @StateObject private var viewModel = MainViewModel(tripServiceDelegate: TripService())
+    private let locationManager = LocationManager()
+    
     @State var polyline: String = ""
     @State var stopIdentifier: Int?
     @State var selectedStop: StopInfo?
@@ -25,7 +27,9 @@ struct MainView: View {
     
     var body: some View {
         ZStack(alignment: .center) {
-            MapView(stopIdentifier: $stopIdentifier, region: viewModel.region, lineCoordinates: viewModel.coordinates, annotations: viewModel.selectedStops)
+            MapView()
+                .environmentObject(locationManager)
+                .environmentObject(viewModel)
                 .edgesIgnoringSafeArea(.all)
                 .onReceive(viewModel.$selectedStop) { stopInfo in
                     if let _ = stopInfo {
@@ -33,6 +37,7 @@ struct MainView: View {
                         mainAlert = .info
                     }
                 }
+                
             VStack {
                 Spacer()
                 ScrollView(.horizontal, showsIndicators: false) {
@@ -79,13 +84,6 @@ struct MainView: View {
             if let _ = userError {
                 showAlert = true
                 mainAlert = .error
-            }
-        }
-        .onChange(of: stopIdentifier) { newSelectedStop in
-            Task {
-                do {
-                    try await viewModel.getStopInfo()
-                }
             }
         }
         .alert(isPresented: $showAlert) {

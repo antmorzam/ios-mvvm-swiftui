@@ -12,10 +12,8 @@ import Polyline
 class MainViewModel: ObservableObject {
     private let tripServiceDelegate: TripServiceDelegate
     
-    @Published var region = MKCoordinateRegion(
-        center: CLLocationCoordinate2D(latitude: 41.38074, longitude: 2.18594),
-        span: MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
-    )
+    @Published var region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 41.38074, longitude: 2.18594),
+                                               span: MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05))
     @Published var tripList: [Trip] = []
     @Published var error: UserError?
     @Published var selectedTrip: Trip?
@@ -44,12 +42,12 @@ class MainViewModel: ObservableObject {
         }
     }
     
-    func getStopInfo() async throws {
+    func getStopInfo(identifier: Int) async throws {
         DispatchQueue.main.async {
             self.isLoadingStopInfo = true
         }
         do {
-            let result = try await tripServiceDelegate.fetchStop()
+            let result = try await tripServiceDelegate.fetchStop(identifier: identifier)
             await self.setStop(result)
         } catch {
             await self.showError(.failedFecthingData)

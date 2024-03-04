@@ -9,18 +9,18 @@ import SwiftUI
 import MapKit
 
 struct MapView: UIViewRepresentable {
-
-    @Binding var stopIdentifier: Int?
-
-    let region: MKCoordinateRegion
-    let lineCoordinates: [CLLocationCoordinate2D]
-    let annotations: [StopAnnotation]
+    
+    @EnvironmentObject private var locationManager: LocationManager
+    @EnvironmentObject private var viewModel: MainViewModel
     
     func makeUIView(context: Context) -> MKMapView {
         let mapView = MKMapView()
         mapView.delegate = context.coordinator
-        mapView.region = region
+        mapView.region = viewModel.region
+        mapView.showsUserLocation = true
 
+        locationManager.requestLocationUpdate()
+        
         return mapView
     }
 
@@ -28,9 +28,15 @@ struct MapView: UIViewRepresentable {
         view.removeOverlays(view.overlays)
         view.removeAnnotations(view.annotations)
         
-        view.region = region
-        view.addAnnotations(annotations)
-        let polyline = MKPolyline(coordinates: lineCoordinates, count: lineCoordinates.count)
+        if let userLocation = locationManager.userLocation, viewModel.selectedStops.isEmpty {
+            let updatedRegion = MKCoordinateRegion(center: userLocation, span: MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05))
+            view.setRegion(updatedRegion, animated: true)
+        } else {
+            view.setRegion(viewModel.region, animated: true)
+        }
+        
+        view.addAnnotations(viewModel.selectedStops)
+        let polyline = MKPolyline(coordinates: viewModel.coordinates, count: viewModel.coordinates.count)
         view.addOverlay(polyline)
     }
 
@@ -38,8 +44,10 @@ struct MapView: UIViewRepresentable {
         Coordinator(self)
     }
 
-    func handleButtonTap(identifier: Int) {
-        stopIdentifier = identifier
+    func handleButtonTap(identifier: Int) async {
+        do {
+            try await self.viewModel.getStopInfo(identifier: identifier)
+        } catch { }
     }
 }
 
@@ -62,7 +70,11 @@ class Coordinator: NSObject, MKMapViewDelegate {
     
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
         if let annotation = view.annotation as? StopAnnotation {
-            parent.handleButtonTap(identifier: annotation.identifier)
+            DispatchQueue.main.async {
+                Task {
+                    await self.parent.handleButtonTap(identifier: annotation.identifier)
+                }
+            }
         }
     }
 }
