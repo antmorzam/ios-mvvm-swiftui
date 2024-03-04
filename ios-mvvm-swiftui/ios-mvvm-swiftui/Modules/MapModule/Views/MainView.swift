@@ -89,13 +89,13 @@ struct MainView: View {
         .alert(isPresented: $showAlert) {
             switch mainAlert {
             case .error:
-                return Alert(title: Text("Error"),
-                             message: Text(viewModel.error?.description ?? "Unknown error"),
-                      dismissButton: .default(Text("OK")))
+                return Alert(title: Text("error"),
+                             message: Text(viewModel.error?.description ?? "unknown_error"),
+                      dismissButton: .default(Text("ok")))
             case .info:
-                return Alert(title: Text("Stop Information"),
-                             message: Text("\(viewModel.selectedStop?.address ?? "").\n User: \(viewModel.selectedStop?.userName ?? "")"),
-                             dismissButton: .default(Text("OK")))
+                return Alert(title: Text("stop_info"),
+                             message: Text("\(viewModel.selectedStop?.address ?? "").\n \(viewModel.selectedStop?.userName ?? "")"),
+                             dismissButton: .default(Text("ok")))
             }
         }
         .sheet(isPresented: $addIssue) {

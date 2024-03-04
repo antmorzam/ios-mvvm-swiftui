@@ -13,7 +13,7 @@ enum UserError: Error {
     var description: String {
         switch self {
         case .failedFecthingData:
-            return "Sorry, it was imposible retrieve some trips. \n Try again later."
+            return NSLocalizedString("error_trips", comment: "error downloading trips")
         }
     }
 }

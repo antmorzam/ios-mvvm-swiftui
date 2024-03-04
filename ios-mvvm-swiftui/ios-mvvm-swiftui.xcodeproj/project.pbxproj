@@ -10,6 +10,7 @@
 		930DB4412B94CC020077FD55 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930DB4402B94CC020077FD55 /* LocationManager.swift */; };
 		930DB4422B94CC020077FD55 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930DB4402B94CC020077FD55 /* LocationManager.swift */; };
 		930DB4432B94CC020077FD55 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930DB4402B94CC020077FD55 /* LocationManager.swift */; };
+		930DB4472B95E5DF0077FD55 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 930DB4492B95E5DF0077FD55 /* Localizable.strings */; };
 		9312E72D2B92C12200BBFC9B /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 9312E72C2B92C12200BBFC9B /* SnapshotTesting */; };
 		9312E72F2B92C37000BBFC9B /* FormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9312E72E2B92C37000BBFC9B /* FormView.swift */; };
 		9312E7302B92C37000BBFC9B /* FormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9312E72E2B92C37000BBFC9B /* FormView.swift */; };
@@ -102,6 +103,7 @@
 
 /* Begin PBXFileReference section */
 		930DB4402B94CC020077FD55 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		930DB4482B95E5DF0077FD55 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		9312E72E2B92C37000BBFC9B /* FormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormView.swift; sourceTree = "<group>"; };
 		9312E7322B92C39A00BBFC9B /* AddIssueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddIssueView.swift; sourceTree = "<group>"; };
 		9312E7362B93569800BBFC9B /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 		930DB4442B94CC100077FD55 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				930DB4492B95E5DF0077FD55 /* Localizable.strings */,
 				934905B12B8E62B500E1F5AD /* Constants.swift */,
 				934905B92B8EA35400E1F5AD /* Errors.swift */,
 				930DB4402B94CC020077FD55 /* LocationManager.swift */,
@@ -463,6 +466,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				937667C22B8DD7F10018E530 /* Preview Assets.xcassets in Resources */,
+				930DB4472B95E5DF0077FD55 /* Localizable.strings in Resources */,
 				937667BF2B8DD7F10018E530 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -587,6 +591,17 @@
 			targetProxy = 937667D72B8DD7F20018E530 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		930DB4492B95E5DF0077FD55 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				930DB4482B95E5DF0077FD55 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		937667DE2B8DD7F20018E530 /* Debug */ = {

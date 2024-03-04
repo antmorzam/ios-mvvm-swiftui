@@ -23,7 +23,7 @@ struct CardView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
             if isLoading {
-                ProgressView("Loading...")
+                ProgressView("loading")
             } else {
                 Text(status ?? "")
                     .font(.headline)

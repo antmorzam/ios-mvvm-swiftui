@@ -30,7 +30,5 @@ final class LocationManager: NSObject, CLLocationManagerDelegate, ObservableObje
         }
     }
     
-    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
-        print("Error location")
-    }
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) { }
 }

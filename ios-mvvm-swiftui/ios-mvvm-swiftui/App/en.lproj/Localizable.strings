@@ -1,0 +1,27 @@
+/* 
+  Localizable.strings
+  ios-mvvm-swiftui
+
+  Created by Antonio Moreno on 4/3/24.
+  
+*/
+
+"error" = "Error";
+"unknow_error" = "Unknown error";
+"ok" = "OK";
+"stop_info" = "Stop Information";
+"contact_form" = "Contact Form";
+"name_data" = "Name Data";
+"name" = "Name";
+"surname" = "Surname";
+"contact_data" = "Contact data";
+"email" = "Email";
+"phone_no" = "Phone Number";
+"time_data" = "Time data";
+"details" = "Details";
+"submit" = "Submit";
+"required_field_title" = "Required field";
+"required_field_msg" = "Please fill in the required information";
+"saved" = "Saved!";
+"loading" = "Loading...";
+"error_trips" = "Sorry, it was imposible retrieve some trips. \n Try again later.";

@@ -23,20 +23,20 @@ struct ContactFormView: View {
     var body: some View {
         VStack {
             Form() {
-                Section(header: Text("Contact Form")
+                Section(header: Text("contact_form")
                     .font(.title)){}
                 
-                Section("Name Data") {
-                    TextField("Name", text: $viewModel.formData.name)
-                    TextField("Surname", text: $viewModel.formData.surname)
+                Section("name_data") {
+                    TextField("name", text: $viewModel.formData.name)
+                    TextField("surname", text: $viewModel.formData.surname)
                 }
                 
-                Section("Contact data") {
-                    TextField("Email", text: $viewModel.formData.email)
-                    TextField("Phone Number", text: $viewModel.formData.phone)
+                Section("contact_data") {
+                    TextField("email", text: $viewModel.formData.email)
+                    TextField("phone_no", text: $viewModel.formData.phone)
                         .keyboardType(.phonePad)
                 }
-                Section("time data") {
+                Section("time_data") {
                     Text(dateFormatter.string(from: viewModel.formData.date))
                         .foregroundColor(.blue)
                         .onTapGesture {
@@ -60,7 +60,7 @@ struct ContactFormView: View {
                             .environment(\.timeZone, .current)
                     }
                 }
-                Section("Details") {
+                Section("details") {
                     ZStack(alignment: .bottomTrailing) {
                         Text("\(viewModel.formData.details.count)/200")
                             .foregroundColor(viewModel.formData.details.count == 200 ? .red : .gray)
@@ -74,7 +74,7 @@ struct ContactFormView: View {
                     }
                 }
                 Section {
-                    Button("Submit") {
+                    Button("submit") {
                         UNUserNotificationCenter.current().requestAuthorization(options: .badge) { (granted, error) in
                             if error != nil {
                                 UIApplication.shared.applicationIconBadgeNumber = 0
@@ -93,12 +93,12 @@ struct ContactFormView: View {
             .alert(isPresented: $showAlert) {
                 switch formAlert {
                 case .error:
-                    return Alert(title: Text("Required field"),
-                                 message: Text("Please fill in the required information"),
-                                 dismissButton: .default(Text("OK")))
+                    return Alert(title: Text("required_field_title"),
+                                 message: Text("required_field_msg"),
+                                 dismissButton: .default(Text("ok")))
                 case .success:
-                    return Alert(title: Text("Saved!"),
-                                 dismissButton: .default(Text("OK")))
+                    return Alert(title: Text("saved"),
+                                 dismissButton: .default(Text("ok")))
                 }
             }
         }
